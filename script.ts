@@ -1,5 +1,6 @@
-// 50 TypeScript logical tasks
+// TypeScript logical tasks with solution
 
+import { Interface } from "readline";
 import { number } from "yargs";
 
 //1.Write a function to check if a given number is prime.
@@ -223,3 +224,23 @@ const findArmstrongNumbers = (start: number, end: number): number[] => {
 
   return armstrongNumbers;
 };
+
+
+//21.Interactive Task Validator
+interface Task {
+  description: string;
+  answer: string | number | boolean;
+}
+
+const solveTask = (task: Task): void => {
+  console.log(task.description);
+
+  const userAnswer = prompt("Enter your answer:");
+
+  if (userAnswer == task.answer) {
+    console.log("Correct answer!");
+  } else {
+    console.log("Incorrect answer.");
+  }
+};
+
