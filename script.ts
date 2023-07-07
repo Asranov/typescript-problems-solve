@@ -1,5 +1,7 @@
 // 50 TypeScript logical tasks
 
+import { number } from "yargs";
+
 //1.Write a function to check if a given number is prime.
 function isPrime(number: number): boolean {
   if (number <= 1) {
@@ -98,4 +100,55 @@ const isSortedAscending = (arr: number[]): boolean => {
   return true;
 };
 
+//11.Calculate the sum of all numbers in an array.
+const calculateSum = (numbers: number[]): number => {
+  let sum = 0
 
+  numbers.forEach((number) => {
+    sum += number
+  })
+
+  return sum
+}
+
+//12.Find the average of numbers in an array.
+const calculateAverage = (arr: number[]): number => {
+  if (arr.length === 0) {
+    return 0; // Return 0 for an empty array
+  }
+
+  const sum = arr.reduce((total, num) => total + num, 0);
+  const average = sum / arr.length;
+
+  return average;
+};
+
+//13.Remove all falsy values from an array.
+const removeFalsy = (arr: boolean[]): boolean[] => {
+  return arr.filter(Boolean);
+};
+
+//14.Find the longest word in a sentence.
+const longestWord = (str: string): string => {
+  const words = str.split(" ")
+  let word = ""
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > word.length) {
+      word = words[i]
+    }
+  }
+
+  return word
+}
+
+//15.Convert a string to title case.
+const convertToTitleCase = (str: string): string => {
+  const words = str.toLowerCase().split(" ");
+
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+  }
+
+  return words.join(" ");
+};
