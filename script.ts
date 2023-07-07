@@ -21,11 +21,34 @@ function factorial(number: number): number {
     return 1
   }
 
-
-  let result = 1
+  let result = 1;
   for (let i = 1; i <= number; i++) {
     result *= i
   }
 
   return result
+}
+
+//3.Reverse a given string.
+const reverseStr = (str: string): string => {
+  return str.split("").reverse().join("")
+}
+
+//4.Determine if a given string is a palindrome.
+const isStrPalindrome = (str: string): boolean => {
+  const reverseStr = str.split("").reverse().join("")
+  return str.toLocaleLowerCase() == reverseStr.toLocaleLowerCase()
+}
+
+//5.Find the largest num in an array.
+const largestNum = (nums: number[]): number => {
+  let largest = nums[0]
+
+  for (let i = 0; i < nums.length; i++) {
+    if (largest < nums[i]) {
+      largest = nums[i]
+    }
+  }
+
+  return largest
 }
