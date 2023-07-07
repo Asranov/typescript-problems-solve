@@ -152,3 +152,74 @@ const convertToTitleCase = (str: string): string => {
 
   return words.join(" ");
 };
+
+//16.Merge two sorted arrays into a single sorted array.
+const singleSortedArray = (arr1: any[], arr2: any): any[] => {
+  const singleArr = arr1.concat(arr2)
+
+  return singleArr.sort((a, b) => a - b)
+}
+
+//17.Calculate the Fibonacci series up to a given number of terms.
+const fibonacciSeries = (numTerms: number): number[] => {
+  const series: number[] = [];
+
+  if (numTerms >= 1) {
+    series.push(0);
+  }
+
+  if (numTerms >= 2) {
+    series.push(1);
+  }
+
+  for (let i = 2; i < numTerms; i++) {
+    const nextNum = series[i - 1] + series[i - 2];
+    series.push(nextNum);
+  }
+
+  return series;
+};
+
+//18.Check if a given number is a power of 2.
+const isPowerOfTwo = (num: number): boolean => {
+  if (num < 1) {
+    return false;
+  }
+
+  let power = 0;
+  let current = 1;
+
+  while (current < num) {
+    current *= 2;
+    power++;
+  }
+
+  return current === num;
+};
+
+//19.Calculate the square root of a given number.
+const squareRootNumber = (number: number): number => {
+  return Math.sqrt(number)
+}
+
+//20.Check if a given number is an Armstrong number.
+const findArmstrongNumbers = (start: number, end: number): number[] => {
+  const armstrongNumbers: number[] = [];
+
+  for (let num = start; num <= end; num++) {
+    const digits = num.toString().split('');
+    const numDigits = digits.length;
+    let sum = 0;
+
+    for (let i = 0; i < numDigits; i++) {
+      const digit = parseInt(digits[i]);
+      sum += Math.pow(digit, numDigits);
+    }
+
+    if (sum === num) {
+      armstrongNumbers.push(num);
+    }
+  }
+
+  return armstrongNumbers;
+};
