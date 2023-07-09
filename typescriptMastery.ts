@@ -115,35 +115,7 @@ function add2(a: number, b: number) {
 
 const result = add2(5, 7);
 
-//Compiler and Type Checker
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//
 interface User {
   id: number,
   name: string,
