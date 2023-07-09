@@ -1,0 +1,167 @@
+//Static Typing
+let message: string = "Hello, TypeScript!";
+
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+const greeting: string = greet("Alice");
+
+console.log(message);
+console.log(greeting);
+
+//Type Annotations
+let age: number = 25;
+let name2: string = "Alice";
+let isStudent: boolean = true;
+
+function add(x: number, y: number): number {
+  return x + y;
+}
+
+let person: { name: string; age: number } = {
+  name: "Alice",
+  age: 25,
+};
+
+let numbers: number[] = [1, 2, 3, 4, 5];
+let names: string[] = ["Alice", "Bob", "Charlie"];
+
+//Interfaces
+interface Person {
+  name: string;
+  age: number;
+  greet(): void;
+}
+
+class Student implements Person {
+  name: string;
+  age: number;
+  studentId: string;
+
+  constructor(name: string, age: number, studentId: string) {
+    this.name = name;
+    this.age = age;
+    this.studentId = studentId;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}, and I'm ${this.age} years old.`);
+  }
+}
+
+const alice: Person = new Student("Alice", 25, "S12345");
+alice.greet();  // Output: Hello, my name is Alice, and I'm 25 years old.
+
+//Classes
+class Person {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name}, and I'm ${this.age} years old.`);
+  }
+}
+
+const alice1: Person = new Person("Alice", 25);
+alice.greet();  // Output: Hello, my name is Alice, and I'm 25 years old.
+
+
+//Generics
+function printArray<T>(arr: T[]): void {
+  for (let item of arr) {
+    console.log(item)
+  }
+}
+
+const numbers1: number[] = [1, 2, 3, 4, 5];
+const names1: string[] = ["Alice", "Bob", "Charlie"];
+
+printArray(numbers1);  // Output: 1 2 3 4 5
+printArray(numbers1);    // Output: Alice Bob Charlie
+
+
+//Modules and Namespaces
+export function addFunc(a: number, b: number): number {
+  return a + b;
+}
+
+export function subtract(a: number, b: number): number {
+  return a - b;
+}
+
+namespace Geometry {
+  export function calculateArea(width: number, height: number): number {
+    return width * height;
+  }
+}
+
+console.log(Geometry.calculateArea(5, 3));  // Output: 15
+
+
+//Type Inference
+
+let name = "Alice";
+let age2 = 25;
+
+function add2(a: number, b: number) {
+  return a + b;
+}
+
+const result = add2(5, 7);
+
+//Compiler and Type Checker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+interface User {
+  id: number,
+  name: string,
+  age: number
+}
+
+const user: User[] = [
+  { id: 1, name: "Hayes", age: 20 },
+  { id: 2, name: "Stiv", age: 12 },
+  { id: 3, name: "Alice", age: 33 },
+  { id: 4, name: "Lee", age: 22 },
+]
+
+interface Point {
+  x: number,
+  y: number
+}
+
+function logPoint(p: Point) {
+  console.log(`${p.x}, ${p.y}`)
+}
