@@ -225,8 +225,20 @@ const findArmstrongNumbers = (start: number, end: number): number[] => {
   return armstrongNumbers;
 };
 
+//21.Find the GCD (Greatest Common Divisor) of two numbers.
+function calculateGCD(a: number, b: number): number {
+  a = Math.abs(a);
+  b = Math.abs(b);
 
-//21.Interactive Task Validator
+  if (b === 0) {
+    return a;
+  }
+
+  return calculateGCD(b, a % b);
+}
+
+
+//Interactive Task Validator
 interface Task {
   description: string;
   answer: string | number | boolean;
