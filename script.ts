@@ -237,6 +237,14 @@ function calculateGCD(a: number, b: number): number {
   return calculateGCD(b, a % b);
 }
 
+//22.Find the LCM (Least Common Multiple) of two numbers.
+function calculateLCM(a: number, b: number): number {
+  const gcd = calculateGCD(a, b);
+
+  const lcm = (a * b) / gcd;
+
+  return lcm;
+}
 
 //Interactive Task Validator
 interface Task {
