@@ -246,6 +246,63 @@ function calculateLCM(a: number, b: number): number {
   return lcm;
 }
 
+//23.Generate all possible permutations of a given string.
+function generatePermutations(input: string): string[] {
+  const permutations: string[] = [];
+  const stack: [string, string][] = [[input, ""]];
+
+  while (stack.length > 0) {
+    const [remaining, current] = stack.pop()!;
+
+    if (remaining.length === 0) {
+      permutations.push(current);
+      continue;
+    }
+
+    for (let i = remaining.length - 1; i >= 0; i--) {
+      const newRemaining = remaining.slice(0, i) + remaining.slice(i + 1);
+      stack.push([newRemaining, current + remaining[i]]);
+    }
+  }
+
+  return permutations;
+}
+
+//24.Check if a given string is a valid email address.
+const checkEmail = (email: string): boolean => {
+  const emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailCheck.test(email);
+}
+
+//25.Find the median of an array of numbers.
+const findMedian = (numbers: number[]): number => {
+  const sortedNumbers = numbers.sort((a, b) => a - b)
+  const length = sortedNumbers.length
+  const middleIndex = Math.floor(length / 2)
+
+  if (length == 0) {
+    return 0
+  }
+
+  if (length % 2 == 0) {
+    return (sortedNumbers[middleIndex - 1] + sortedNumbers[middleIndex]) / 2
+  } else {
+    return sortedNumbers[middleIndex]
+  }
+}
+
+
+//26.Check if a string contains only digits
+const checkDigit = (str: string): boolean => {
+  for (let i = 0; i < str.length; i++) {
+    if (isNaN(Number(str[i]))) {
+      return false;
+    }
+  }
+  return true;
+};
+
+
 //Interactive Task Validator
 interface Task {
   description: string;
