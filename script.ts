@@ -302,6 +302,20 @@ const checkDigit = (str: string): boolean => {
   return true;
 };
 
+//27.Count the number of vowels in a string.
+const countVowels = (str: string): number => {
+  let count = 0
+  const vowels = ["a", "o", "e", "i", "u"]
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i].toLocaleLowerCase())) {
+      count++
+    }
+  }
+
+  return count
+}
+
 
 //Interactive Task Validator
 interface Task {
