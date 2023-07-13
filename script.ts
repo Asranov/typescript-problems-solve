@@ -316,6 +316,11 @@ const countVowels = (str: string): number => {
   return count
 }
 
+//28.Remove all whitespace characters from a string.
+function removeWhitespace(str: string): string {
+  return str.split(' ').join('');
+}
+
 
 //Interactive Task Validator
 interface Task {
