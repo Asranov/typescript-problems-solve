@@ -321,6 +321,108 @@ function removeWhitespace(str: string): string {
   return str.split(' ').join('');
 }
 
+//29.Check if a given string is a valid palindrome considering only alphanumeric characters.
+function isPalindrome(str: string): boolean {
+  const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+
+  const length = cleanedStr.length;
+  for (let i = 0; i < length / 2; i++) {
+    if (cleanedStr[i] !== cleanedStr[length - 1 - i]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+
+//30.Find the missing number in an array of consecutive integers.
+function findMissingNumber(numbers: number[]): number {
+  const sortedNumbers = numbers.sort((a, b) => a - b);
+
+  for (let i = 0; i < sortedNumbers.length; i++) {
+    if (sortedNumbers[i] + 1 !== sortedNumbers[i + 1]) {
+      return sortedNumbers[i] + 1;
+    }
+  }
+
+  return sortedNumbers[sortedNumbers.length - 1] + 1;
+}
+
+//31.Determine if a given year is a leap year.
+function isLeapYear(year: number): boolean {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return true;
+      }
+      return false;
+    }
+    return true;
+  }
+  return false;
+}
+
+//32.Generate all prime numbers up to a given number.
+function generatePrimes(upTo: number): number[] {
+  const primes: boolean[] = new Array(upTo + 1).fill(true);
+  primes[0] = primes[1] = false;
+
+  for (let i = 2; i <= Math.sqrt(upTo); i++) {
+    if (primes[i]) {
+      for (let j = i * i; j <= upTo; j += i) {
+        primes[j] = false;
+      }
+    }
+  }
+
+  const primeNumbers: number[] = [];
+  for (let i = 2; i <= upTo; i++) {
+    if (primes[i]) {
+      primeNumbers.push(i);
+    }
+  }
+
+  return primeNumbers;
+}
+
+
+//34.Calculate the power of a number using recursion.
+function power(base: number, exponent: number): number {
+  if (exponent === 0) {
+    return 1;
+  }
+
+  if (exponent === 1) {
+    return base;
+  }
+
+  return base * power(base, exponent - 1);
+}
+
+//35.Check if a given string is a valid URL.
+function isValidURL(url: string): boolean {
+  const pattern = /^(?:https?:\/\/)?(?:www\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:\/[^\s]*)?$/;
+  return pattern.test(url);
+}
+
+//36.Remove the duplicate characters from a string.
+function removeDuplicates2(str: string): string {
+  const charSet: Set<string> = new Set();
+  let result = '';
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+    if (!charSet.has(char)) {
+      charSet.add(char);
+      result += char;
+    }
+  }
+
+  return result;
+}
+
+
 
 //Interactive Task Validator
 interface Task {
