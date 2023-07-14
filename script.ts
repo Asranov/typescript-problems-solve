@@ -423,22 +423,136 @@ function removeDuplicates2(str: string): string {
 }
 
 
+//37.Reverse the words in a sentence.
+function reverseWords(sentence: string): string {
+  const words = sentence.split(" ").reverse().join(" ")
 
-//Interactive Task Validator
-interface Task {
-  description: string;
-  answer: string | number | boolean;
+  return words
 }
 
-const solveTask = (task: Task): void => {
-  console.log(task.description);
+//38.Find the first non-repeating character in a string.
+function nonRepeatedChar(str: string): string {
+  let char = ""
+  const chars = str.split("").sort()
 
-  const userAnswer = prompt("Enter your answer:");
-
-  if (userAnswer == task.answer) {
-    console.log("Correct answer!");
-  } else {
-    console.log("Incorrect answer.");
+  for (let i = 0; i < chars.length; i++) {
+    if (chars[i] != chars[i + 1]) {
+      char = chars[i]
+      break
+    }
   }
-};
+
+  return char
+}
+
+//39.Calculate the factorial of a number using recursion.
+function factorialFind(n) {
+  return factorialHelper(n, 1);
+}
+
+function factorialHelper(n, result) {
+  if (n === 0) {
+    return result;
+  }
+
+  return factorialHelper(n - 1, result * n);
+}
+
+//40.Determine if a given number is a perfect square.
+function isPerfectSquare(num: number): boolean {
+  const squareRoot: number = Math.sqrt(num);
+  return Number.isInteger(squareRoot);
+}
+
+//41.Check if a given string is a valid JSON.
+function isValidJSON(str: string): boolean {
+  try {
+    JSON.parse(str)
+    return true
+  } catch (error) {
+    return false
+  }
+}
+
+//42.Find the sum of all even numbers in an array.
+function sumOfEven(numbers: number[]): number {
+  let sum = 0
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 == 0) {
+      sum += numbers[i]
+    }
+  }
+
+  return sum
+}
+
+//43.Calculate the product of all numbers in an array.
+function calculateProduct(numbers: number[]): number {
+  let product: number = 1;
+
+  for (let i = 0; i < numbers.length; i++) {
+    product *= numbers[i];
+  }
+
+  return product;
+}
+
+//44.Determine if a given string is a valid palindrome ignoring case.
+function isPalindromee(str: string): boolean {
+  const modifiedStr: string = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const reversedStr: string = modifiedStr.split('').reverse().join('');
+
+  return modifiedStr === reversedStr;
+}
+
+//45.Check if a number is a palindrome in binary representation.
+function isBinaryPalindrome(num: number): boolean {
+  const binaryString: string = num.toString(2);
+  const reversedBinaryString: string = binaryString.split('').reverse().join('');
+
+  return binaryString === reversedBinaryString;
+}
+
+//46.Sort an array of strings in alphabetical order.
+function sortStringsAlphabetically(strings: string[]): string[] {
+  return strings.sort((a, b) => a.localeCompare(b));
+}
+
+//47.Count the number of words in a sentence.
+function countWords(sentence: string): number {
+  const words: string[] = sentence.split(" ");
+  return words.length;
+}
+
+//48.Find the difference between two arrays.
+function arrayDifference<T>(arr1: T[], arr2: T[]): T[] {
+  return arr1.filter((element) => !arr2.includes(element));
+}
+
+//49.Determine if a given string is a valid IPv4 address.
+function isValidIPv4Address(ip: string): boolean {
+  const ipv4Pattern: RegExp = /^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$/;
+  const match: RegExpMatchArray | null = ip.match(ipv4Pattern);
+
+  if (!match) {
+    return false;
+  }
+
+  for (let i = 1; i <= 4; i++) {
+    const part: string = match[i];
+    const partInt: number = parseInt(part, 10);
+
+    if (partInt < 0 || partInt > 255 || (part.length > 1 && part.startsWith('0'))) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+//50.Find the intersection of two arrays.
+function arrayIntersection<T>(arr1: T[], arr2: T[]): T[] {
+  return arr1.filter((element) => arr2.includes(element));
+}
 

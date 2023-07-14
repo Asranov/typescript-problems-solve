@@ -137,3 +137,24 @@ interface Point {
 function logPoint(p: Point) {
   console.log(`${p.x}, ${p.y}`)
 }
+
+
+
+//Interactive Task Validator
+interface Task {
+  description: string;
+  answer: string | number | boolean;
+}
+
+const solveTask = (task: Task): void => {
+  console.log(task.description);
+
+  const userAnswer = prompt("Enter your answer:");
+
+  if (userAnswer == task.answer) {
+    console.log("Correct answer!");
+  } else {
+    console.log("Incorrect answer.");
+  }
+};
+
