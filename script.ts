@@ -556,3 +556,9 @@ function arrayIntersection<T>(arr1: T[], arr2: T[]): T[] {
   return arr1.filter((element) => arr2.includes(element));
 }
 
+
+//51.Create a generic function that takes an array of any type and returns the reversed version of the array.
+function reverseArray<T>(array: T[]): T[] {
+  return array.reverse();
+}
+
