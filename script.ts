@@ -562,3 +562,39 @@ function reverseArray<T>(array: T[]): T[] {
   return array.reverse();
 }
 
+//52.Implement a generic stack data structure using a TypeScript class with methods like push, pop, and peek.
+class Stack<T> {
+  private items: T[];
+
+  constructor() {
+    this.items = [];
+  }
+
+  push(item: T): void {
+    this.items.push(item);
+  }
+
+  pop(): T | undefined {
+    return this.items.pop();
+  }
+
+  peek(): T | undefined {
+    if (this.isEmpty()) {
+      return undefined;
+    }
+    return this.items[this.items.length - 1];
+  }
+
+  isEmpty(): boolean {
+    return this.items.length === 0;
+  }
+
+  size(): number {
+    return this.items.length;
+  }
+
+  clear(): void {
+    this.items = [];
+  }
+}
+
