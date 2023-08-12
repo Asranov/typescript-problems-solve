@@ -181,3 +181,68 @@ const typeCompbine = () => {
   const key: UserKeys = 'name';
 
 }
+
+const typeGuards = () => {
+  //typeof
+  let value: string | number = 'hello';
+
+  if (typeof value === 'string') {
+    console.log('value is a string');
+  } else {
+    console.log('value is a number');
+  }
+
+  //intence
+  class Bird {
+    fly() {
+      console.log('flying...');
+    }
+    layEggs() {
+      console.log('laying eggs...');
+    }
+  }
+
+  const pet = new Bird();
+
+  // instanceof
+  if (pet instanceof Bird) {
+    pet.fly();
+  } else {
+    console.log('pet is not a bird');
+  }
+
+  //Equality
+  function example(x: string | number, y: string | boolean) {
+    if (x === y) {
+      // We can now call any 'string' method on 'x' or 'y'.
+      x.toUpperCase();
+      y.toLowerCase();
+    } else {
+      console.log(x);
+      console.log(y);
+    }
+  }
+
+  //truthiness
+  function getUsersOnlineMessage(numUsersOnline: number) {
+    if (numUsersOnline) {
+      return `There are ${numUsersOnline} online now!`;
+    }
+
+    return "Nobody's here. :(";
+  }
+
+  //type Predicates
+  function isString(value: unknown): value is string {
+    return typeof value === 'string';
+  }
+
+  function examplee(x: unknown) {
+    if (isString(x)) {
+      // We can now call any 'string' method on 'x'.
+      x.toUpperCase();
+    } else {
+      console.log(x);
+    }
+  }
+}
