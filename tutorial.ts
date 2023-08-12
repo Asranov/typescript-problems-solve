@@ -97,4 +97,43 @@ const typeScriptTypes = () => {
   const second = pair[1]
 
 
+  //3. Other types
+
+  //any type
+  let obj: any = {}
+
+  //object type
+  function printCoord(pt: { x: number; y: number }) {
+    console.log("The coordinate's x value is " + pt.x);
+    console.log("The coordinate's y value is " + pt.y);
+  }
+
+  printCoord({ x: 3, y: 7 });
+
+  //unknown type
+  function f1(a: any) {
+    a.b(); // OK
+  }
+
+  function f2(a: unknown) {
+    // Error: Property 'b' does not exist on type 'unknown'.
+    // a.b();
+  }
+
+
+  //never type
+  // Function returning never must not have a reachable end point
+  function error(message: string): never {
+    throw new Error(message);
+  }
+
+  // Inferred return type is never
+  function fail() {
+    return error('Something failed');
+  }
+
+  // Function returning never must not have a reachable end point
+  function infiniteLoop(): never {
+    while (true) { }
+  }
 }
