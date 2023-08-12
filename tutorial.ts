@@ -264,3 +264,68 @@ const typeScriptFunc = () => {
   console.log(add(1, 2)); // 3
   // console.log(add('Hello', ' World'));
 }
+
+const typescriptInterface = () => {
+  //types vs interfaces
+  type Person = {
+    name: string;
+    age: number;
+  };
+
+  const person: Person = {
+    name: 'John Doe',
+    age: 30,
+  };
+
+  interface Person2 {
+    name: string;
+    age: number;
+  }
+
+  const person2: Person2 = {
+    name: 'John Doe',
+    age: 30,
+  };
+
+  //extending interfaces
+  interface Shape {
+    width: number;
+    height: number;
+  }
+
+  interface Square extends Shape {
+    sideLength: number;
+  }
+
+  let square: Square = {
+    width: 10,
+    height: 10,
+    sideLength: 10,
+  };
+
+
+  //declarations
+  interface Person3 {
+    firstName: string;
+    lastName: string;
+    age?: number;
+
+    getFullName(): string;
+  }
+
+  //hybrid types
+  type Education = {
+    degree: string;
+    school: string;
+    year: number;
+  };
+
+  type User = {
+    name: string;
+    age: number;
+    email: string;
+    education: Education;
+  };
+
+
+}
