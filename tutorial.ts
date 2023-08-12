@@ -23,12 +23,12 @@ const typeScriptTypes = () => {
   //1. Primitive types
 
   //boolean type
-  let isTrue: boolean = true
-  let isFalse: boolean = false
+  let isTrue: boolean = true;
+  let isFalse: boolean = false;
 
   //number type
-  let intValue: number = 42
-  let floatValue: number = 12.3
+  let intValue: number = 42;
+  let floatValue: number = 12.3;
 
   //string type
   let name: string = 'John Doe';
@@ -136,4 +136,19 @@ const typeScriptTypes = () => {
   function infiniteLoop(): never {
     while (true) { }
   }
+
+  //as const 
+  const colors = ['red', 'green', 'blue'] as const;
+
+  //as [type]
+  let num = 20
+  // let str = num as string
+
+  //as any
+  let anyValue: any = 20
+  anyValue = "13"
+  anyValue = false
+
 }
+
+typeScriptTypes()
