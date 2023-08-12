@@ -152,3 +152,32 @@ const typeScriptTypes = () => {
 }
 
 typeScriptTypes()
+
+
+const typeCompbine = () => {
+  //Union types
+  function combine(input1: string | number, input2: string | number) {
+    // return input1 + input2;
+  }
+
+  //intersection types
+  // type typeAB = typeA & typeB;
+
+  //aliaces types
+  type Name = string;
+  type Age = number;
+  type User = { name: Name; age: Age };
+
+  const user: User = { name: 'John', age: 30 };
+
+  //key of operators
+  interface User2 {
+    name: string;
+    age: number;
+    location: string;
+  }
+
+  type UserKeys = keyof User2; // "name" | "age" | "location"
+  const key: UserKeys = 'name';
+
+}
