@@ -19,24 +19,27 @@
 // Type assertions
 
 const typeScriptTypes = () => {
-  //boolean types
+
+  //1. Primitive types
+
+  //boolean type
   let isTrue: boolean = true
   let isFalse: boolean = false
 
-  //number types
+  //number type
   let intValue: number = 42
   let floatValue: number = 12.3
 
-  //string types
+  //string type
   let name: string = 'John Doe';
 
 
-  //void types
+  //void type
   function noop(): void {
     return
   }
 
-  //undefined and null types
+  //undefined and null type
   function doSomething(x: string | null) {
     if (x === null) {
       // do nothing
@@ -44,5 +47,54 @@ const typeScriptTypes = () => {
       console.log('Hello, ' + x.toUpperCase());
     }
   }
+
+
+  //2. Object types
+
+  //interface type
+  interface Person {
+    name: string;
+    age: number;
+  }
+
+  function greet(person: Person) {
+    return "Hello, " + person.name
+  }
+
+  //Class type
+  class Car {
+    make: string;
+    model: string;
+    year: number;
+
+    constructor(make: string, model: string, year: number) {
+      this.make = make;
+      this.model = model;
+      this.year = year;
+    }
+
+    drive() {
+      console.log(`Driving my ${this.year} ${this.make} ${this.model}`);
+    }
+  }
+
+  //Enum type
+  enum Direction {
+    Up = 1,
+    Down,
+    Left,
+    Right,
+  }
+
+  //arrays type
+  const numbers: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  //typle type
+  type StringNumberPair = [string, number]
+  const pair: StringNumberPair = ["string", 0]
+
+  const firts = pair[0]
+  const second = pair[1]
+
 
 }
