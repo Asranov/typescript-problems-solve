@@ -597,5 +597,3 @@ class Stack<T> {
     this.items = [];
   }
 }
-
-

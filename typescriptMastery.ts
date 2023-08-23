@@ -158,3 +158,12 @@ const solveTask = (task: Task): void => {
   }
 };
 
+//Palindrome Check
+function isPalindrome(str: string): boolean {
+  const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const reversedStr = cleanStr.split('').reverse().join('');
+  return cleanStr === reversedStr;
+}
+
+console.log(isPalindrome("racecar")); // true
+console.log(isPalindrome("hello"));   // false
