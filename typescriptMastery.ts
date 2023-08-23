@@ -196,3 +196,17 @@ function factorial(n: number): number {
 
 console.log(factorial(5)); // 120
 console.log(factorial(0)); // 1
+
+
+//Find Maximum Element
+function findMax(arr: number[]): number {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+console.log(findMax([5, 2, 9, 1, 5, 6])); // 9
