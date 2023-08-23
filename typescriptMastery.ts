@@ -220,7 +220,3 @@ function reverseArray(arr: any[]): void {
     arr[arr.length - 1 - i] = temp;
   }
 }
-
-const numbers = [1, 2, 3, 4, 5];
-reverseArray(numbers);
-console.log(numbers); // [5, 4, 3, 2, 1]
