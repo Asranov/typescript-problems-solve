@@ -220,3 +220,19 @@ function reverseArray(arr: any[]): void {
     arr[arr.length - 1 - i] = temp;
   }
 }
+
+
+//GENERICS
+
+//ex: 1
+function getFirstElement<T>(arr: T[]): T | undefined {
+  return arr.length > 0 ? arr[0] : undefined;
+}
+
+const stringArray: string[] = ["apple", "banana", "cherry"];
+const numberArray: number[] = [1, 2, 3];
+const result1 = getFirstElement(stringArray);
+const result2 = getFirstElement(numberArray);
+
+console.log(result1);
+console.log(result2);
