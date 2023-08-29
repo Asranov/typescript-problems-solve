@@ -277,8 +277,12 @@ class KeyValuePair<K, V> {
   }
 }
 
-
 //Task 5: Tuple to Array Conversion
 function tupleToArray<T extends any[]>(...tuple: T): T {
   return tuple
+}
+
+//Task 6:  Array Length Checker
+function isArrayLength<T>(arr: T[], lenght: number): boolean {
+  return arr.length == lenght
 }
