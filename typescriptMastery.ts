@@ -276,3 +276,9 @@ class KeyValuePair<K, V> {
     this.value = value;
   }
 }
+
+
+//Task 5: Tuple to Array Conversion
+function tupleToArray<T extends any[]>(...tuple: T): T {
+  return tuple
+}
