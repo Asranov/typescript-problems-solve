@@ -245,4 +245,7 @@ const identity = <T>(arg: T): T => arg;
 //Task 2: Array Reversal
 const reversedArray = <T>(arr: T[]): T[] => [...arr].reverse();
 
-
+//Task 3: Filter Array
+function filterArray<T>(array: T[], filterFn: (item: T) => boolean): T[] {
+  return array.filter(filterFn);
+}
