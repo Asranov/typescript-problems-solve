@@ -249,3 +249,30 @@ const reversedArray = <T>(arr: T[]): T[] => [...arr].reverse();
 function filterArray<T>(array: T[], filterFn: (item: T) => boolean): T[] {
   return array.filter(filterFn);
 }
+
+//Task 4: Key-Value Pair
+class KeyValuePair<K, V> {
+  private key: K;
+  private value: V;
+
+  constructor(key: K, value: V) {
+    this.key = key;
+    this.value = value;
+  }
+
+  getKey(): K {
+    return this.key;
+  }
+
+  setKey(key: K): void {
+    this.key = key;
+  }
+
+  getValue(): V {
+    return this.value;
+  }
+
+  setValue(value: V): void {
+    this.value = value;
+  }
+}
