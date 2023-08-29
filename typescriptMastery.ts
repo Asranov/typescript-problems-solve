@@ -286,3 +286,9 @@ function tupleToArray<T extends any[]>(...tuple: T): T {
 function isArrayLength<T>(arr: T[], lenght: number): boolean {
   return arr.length == lenght
 }
+
+
+//Task 7: Value Swapper
+function swapValues<T>(a: T, b: T): [T, T] {
+  return [b, a];
+}
