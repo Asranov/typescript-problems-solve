@@ -240,3 +240,9 @@ console.log(result2);
 
 //Task 1: Identity Function
 const identity = <T>(arg: T): T => arg;
+
+
+//Task 2: Array Reversal
+const reversedArray = <T>(arr: T[]): T[] => [...arr].reverse();
+
+
