@@ -292,3 +292,15 @@ function isArrayLength<T>(arr: T[], lenght: number): boolean {
 function swapValues<T>(a: T, b: T): [T, T] {
   return [b, a];
 }
+
+//Task 8: Array Filter Map
+function filterAndMap<T, U>(
+  array: T[],
+  filterFn: (item: T) => boolean,
+  mapFn: (item: T) => U
+): U[] {
+  const filteredArray = array.filter(filterFn);
+  const mappedArray = filteredArray.map(mapFn);
+  return mappedArray;
+}
+
