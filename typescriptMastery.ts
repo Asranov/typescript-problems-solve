@@ -236,3 +236,7 @@ const result2 = getFirstElement(numberArray);
 
 console.log(result1);
 console.log(result2);
+
+
+//Task 1: Identity Function
+const identity = <T>(arg: T): T => arg;
