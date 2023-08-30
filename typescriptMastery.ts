@@ -304,3 +304,14 @@ function filterAndMap<T, U>(
   return mappedArray;
 }
 
+//Task 9: Array Shift
+function shiftArray<T>(arr: T[]): T | undefined {
+  return arr.shift()
+}
+
+
+//Task 10:
+
+//Task 11:
+
+//Task 12:
