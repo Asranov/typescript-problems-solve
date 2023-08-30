@@ -310,7 +310,10 @@ function shiftArray<T>(arr: T[]): T | undefined {
 }
 
 
-//Task 10:
+//Task 10:Array Concatenation
+function concatenateArrays<T>(arr1: T[], arr2: T[]): T[] {
+  return arr1.concat(arr2)
+}
 
 //Task 11:
 
