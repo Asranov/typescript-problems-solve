@@ -319,4 +319,7 @@ function removeUndefined<T>(arr: (T | undefined)[]): T[] {
   return arr.filter((item) => item !== undefined) as T[];
 }
 
-//Task 12:
+//Task 12:Linked List Node
+class ListNode<T> {
+  constructor(public value: T, public next: ListNode<T> | null = null) { }
+}
