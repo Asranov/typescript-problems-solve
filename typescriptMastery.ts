@@ -309,12 +309,14 @@ function shiftArray<T>(arr: T[]): T | undefined {
   return arr.shift()
 }
 
-
 //Task 10:Array Concatenation
 function concatenateArrays<T>(arr1: T[], arr2: T[]): T[] {
   return arr1.concat(arr2)
 }
 
-//Task 11:
+//Task 11: Remove Undefined
+function removeUndefined<T>(arr: (T | undefined)[]): T[] {
+  return arr.filter((item) => item !== undefined) as T[];
+}
 
 //Task 12:
