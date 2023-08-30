@@ -323,3 +323,13 @@ function removeUndefined<T>(arr: (T | undefined)[]): T[] {
 class ListNode<T> {
   constructor(public value: T, public next: ListNode<T> | null = null) { }
 }
+
+
+//Task 13:Identity Class
+class Identity<T> {
+  constructor(private value: T) { }
+
+  getValue(): T {
+    return this.value
+  }
+}
