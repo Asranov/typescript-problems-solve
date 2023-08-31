@@ -333,3 +333,8 @@ class Identity<T> {
     return this.value
   }
 }
+
+//Task 14: Pair Class
+class Pair<T, U> {
+  constructor(public first: T, public second: U) { }
+}
