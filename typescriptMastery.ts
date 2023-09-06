@@ -338,3 +338,8 @@ class Identity<T> {
 class Pair<T, U> {
   constructor(public first: T, public second: U) { }
 }
+
+//Task 1: Find the Sum of Even Numbers
+function sumOfEvenNumbers(numbers: number[]): number {
+  return numbers.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0);
+}
