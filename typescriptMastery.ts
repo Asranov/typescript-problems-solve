@@ -340,11 +340,11 @@ class Pair<T, U> {
 }
 
 //Task 1: Find the Sum of Even Numbers
-function sumOfEvenNumbers(numbers: number[]): number {
-  return numbers.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0);
-}
+// function sumOfEvenNumbers(numbers: number[]): number {
+//   return numbers.reduce((sum, num) => (num % 2 === 0 ? sum + num : sum), 0);
+// }
 
 //Task 2: Reverse a String
-function reverseString(input: string): string {
-  return input.split('').reverse().join('');
-}
+// function reverseString(input: string): string {
+//   return input.split('').reverse().join('');
+// }
