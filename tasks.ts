@@ -9,3 +9,9 @@
 // In TypeScript, there are several built-in types available for developers to ensure safer,
 //  more accurate code. Some of the most common built-in types include:
 //  any, boolean, number, string, null, undefined, void etc.
+
+// 3.Give an example of generics in TypeScript?
+// Generics in TypeScript allow for creating reusable and flexible components without compromising on type safety. 
+function identify<T>(arg: T): T {
+  return arg
+}
