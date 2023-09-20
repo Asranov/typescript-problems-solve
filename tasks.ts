@@ -15,3 +15,17 @@
 function identify<T>(arg: T): T {
   return arg
 }
+
+// 4.Tell me about Modules in TypeScript.
+// In TypeScript (TS), modules are a way to organize and encapsulate code into reusable units.
+// TypeScript supports different module systems, including CommonJS, ES6 modules, and AMD.
+// I'll provide examples of both CommonJS and ES6 modules.
+
+// math.ts
+export function add(a: number, b: number): number {
+  return a + b;
+}
+
+export function subtract(a: number, b: number): number {
+  return a - b;
+}
