@@ -13,7 +13,7 @@
 // 3.Give an example of generics in TypeScript?
 // Generics in TypeScript allow for creating reusable and flexible components without compromising on type safety. 
 function identify<T>(arg: T): T {
-  return arg
+  return arg;
 }
 
 // 4.Tell me about Modules in TypeScript.
@@ -86,3 +86,11 @@ console.log(dynamicVariable);
 
 const array: any[] = [1, "two", true];
 console.log(array);
+
+// 10.Is string interpolation possible in TypeScript?
+// Yes, string interpolation is possible in TypeScript.
+// TypeScript supports string template literals, which allow you to embed expressions within strings using template placeholders ${ }.
+
+const name = "Alice";
+const age = 30;
+const message = `Hello, my name is ${name} and I am ${age} years old.`;
