@@ -131,3 +131,6 @@ interface Person {
   age: number;
   sayHello(): void;
 }
+
+// 14.Explain Decorators in TypeScript.
+// Decorators in TypeScript are a special kind of declarative syntax used to add metadata or modify the behavior of classes, methods, properties, or parameters. 
