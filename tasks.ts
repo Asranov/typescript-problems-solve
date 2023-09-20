@@ -94,3 +94,29 @@ console.log(array);
 const name = "Alice";
 const age = 30;
 const message = `Hello, my name is ${name} and I am ${age} years old.`;
+
+
+// 11.How do the extensions .ts and .tsx differ in TypeScript?
+// In TypeScript, the extensions .ts and .tsx are used to distinguish between regular TypeScript files and TypeScript files that include JSX (JavaScript XML) syntax. JSX is often associated with React, a popular JavaScript library for building user interfaces.
+// .ts
+// Files with the .ts extension are regular TypeScript files.
+// They contain TypeScript code without JSX syntax.
+// You typically use .ts for non-React projects or for TypeScript code that doesn't involve rendering user interfaces with JSX.
+
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+const message1 = greet("Alice");
+
+// .tsx (TypeScript with JSX Files):
+// import React from 'react';
+
+// function Greeting({ name }: { name: string }) {
+//   return <div>Hello, {name}!</div>;
+// }
+
+// const App = () => {
+//   return <Greeting name="Alice" />;
+// };
+
+// export default App;
