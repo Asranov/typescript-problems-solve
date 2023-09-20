@@ -120,3 +120,7 @@ const message1 = greet("Alice");
 // };
 
 // export default App;
+
+// 12.Differentiate between Classes and Interfaces in TypeScript?
+// Classes: It is denoted by class keyword
+// Interfaces: It is denoted by interface keyword
