@@ -43,4 +43,27 @@ export function subtract(a: number, b: number): number {
 // 7.List some benefits of TypeScript?
 // TypeScript offers several benefits over plain JavaScript, making it a popular choice for many software development projects.
 // Here are some of the key advantages of TypeScript:
-// Static Typing, Enhanced Tooling, Code Readability, Refactoring Support,Error Detection, ECMAScript Compatibility, Module System, Popular Frameworks and Libraries and etc
+// Static Typing, Enhanced Tooling, Code Readability, Refactoring Support,Error Detection, ECMAScript Compatibility, Module System, Popular Frameworks and Libraries and etc...
+
+// 8. In TypeScript, can we call the base class constructor from the child class ?
+class Animal {
+  constructor(public name: string) { }
+
+  makeSound() {
+    console.log(`${this.name} makes a sound`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name: string, public breed: string) {
+    super(name);
+  }
+
+  bark() {
+    console.log(`${this.name} barks`);
+  }
+}
+
+const myDog = new Dog('Buddy', 'Golden Retriever');
+myDog.makeSound();
+myDog.bark();
