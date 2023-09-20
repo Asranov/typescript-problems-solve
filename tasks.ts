@@ -34,3 +34,8 @@ export function subtract(a: number, b: number): number {
 // 5.Why can TypeScript be chosen over JavaScript?
 // TypeScript can be chosen over JavaScript for several reasons,
 // depending on your specific project requirements and development goals.
+
+// 6.Do TypeScript files need compilation?
+// Yes, TypeScript files (.ts) need to be compiled into JavaScript files (.js) before they can be executed in a JavaScript runtime environment.
+// TypeScript is a superset of JavaScript that introduces static typing and additional language features.
+// Since browsers and Node.js understand JavaScript, not TypeScript, you need to transpile TypeScript into JavaScript to run it.
