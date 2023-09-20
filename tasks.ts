@@ -133,4 +133,20 @@ interface Person {
 }
 
 // 14.Explain Decorators in TypeScript.
-// Decorators in TypeScript are a special kind of declarative syntax used to add metadata or modify the behavior of classes, methods, properties, or parameters. 
+// Decorators in TypeScript are a special kind of declarative syntax used to add metadata or modify the behavior of classes, methods, properties, or parameters.
+
+// 15.When should you use interfaces or classes in TypeScript?
+// In TypeScript, both interfaces and classes are used to define custom types and structures. However, you should choose between interfaces and classes based on your specific requirements:
+
+// Use Interfaces when:
+
+// You want to define the shape, structure, and contract for how an object or a class should look, without implementing its actual functionality.
+// You want to enforce specific properties, methods, or their types on an object or a class.
+// You need a lightweight approach that only focuses on the type-checking aspect during development.
+// You want to describe the structure and requirements for function parameters.
+// Use Classes when:
+
+// You want to encapsulate methods and properties within a single entity, including providing a concrete implementation for them.
+// You want to use object-oriented concepts like inheritance, abstraction, and encapsulation.
+// You need to create instances of the class to interact with.
+// You want to use instance-specific state and methods based on concrete implementations.
