@@ -39,3 +39,8 @@ export function subtract(a: number, b: number): number {
 // Yes, TypeScript files (.ts) need to be compiled into JavaScript files (.js) before they can be executed in a JavaScript runtime environment.
 // TypeScript is a superset of JavaScript that introduces static typing and additional language features.
 // Since browsers and Node.js understand JavaScript, not TypeScript, you need to transpile TypeScript into JavaScript to run it.
+
+// 7.List some benefits of TypeScript?
+// TypeScript offers several benefits over plain JavaScript, making it a popular choice for many software development projects.
+// Here are some of the key advantages of TypeScript:
+// Static Typing, Enhanced Tooling, Code Readability, Refactoring Support,Error Detection, ECMAScript Compatibility, Module System, Popular Frameworks and Libraries and etc
