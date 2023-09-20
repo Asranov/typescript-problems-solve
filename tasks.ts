@@ -67,3 +67,22 @@ class Dog extends Animal {
 const myDog = new Dog('Buddy', 'Golden Retriever');
 myDog.makeSound();
 myDog.bark();
+
+// 9.What is the difference between TypeScript and a statically typed language?
+// TypeScript is optionally statically typed, which means you can tell the compiler to ignore a variable's type.
+// We can assign any type of value to the variable using any data type.
+// During compilation, TypeScript will not perform any error checking.
+
+let dynamicVariable: any;
+
+dynamicVariable = 5;
+console.log(dynamicVariable);
+
+dynamicVariable = "Hello";
+console.log(dynamicVariable);
+
+dynamicVariable = true;
+console.log(dynamicVariable);
+
+const array: any[] = [1, "two", true];
+console.log(array);
