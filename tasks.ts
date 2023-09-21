@@ -235,4 +235,8 @@ enum Direction {
 }
 
 // 26.List some features of TypeScript.
-// TypeScript brings several powerful features to JavaScript development, which help in creating safer, more maintainable, and scalable code. 
+// TypeScript brings several powerful features to JavaScript development, which help in creating safer, more maintainable, and scalable code.
+
+// 27.Tell me the Components of TypeScript?
+// TypeScript is a statically typed superset of JavaScript that brings additional features and enhancements to the language.
+// Syntax, Type Annotations, Interfaces, Classes, Enums, Generics, Type Inference, Type Aliases etc...
