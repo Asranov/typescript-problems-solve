@@ -240,3 +240,16 @@ enum Direction {
 // 27.Tell me the Components of TypeScript?
 // TypeScript is a statically typed superset of JavaScript that brings additional features and enhancements to the language.
 // Syntax, Type Annotations, Interfaces, Classes, Enums, Generics, Type Inference, Type Aliases etc...
+
+// 28.How will you install TypeScript?
+// To install TypeScript, you need to have Node.js and npm (Node Package Manager) installed on your machine. With Node.js and npm installed, you can follow these steps to install TypeScript:
+// Open up your terminal or command prompt.
+// Run the following command to install TypeScript globally:
+// npm install -g typescript
+// This command will install the latest version of TypeScript as a global package, making it available on your entire system for use in multiple projects. The -g flag ensures that the package is installed globally.
+// After the installation is complete, you can check the installed version of TypeScript by running:
+// tsc --version
+// This command will display the TypeScript version on your system, confirming that the installation was successful.
+// Now, you have TypeScript installed and ready to use. To compile a TypeScript file, you can use the tsc command followed by the filename, like this:
+// tsc myFile.ts
+// This command will compile your TypeScript file (myFile.ts) into a JavaScript file with the same name (myFile.js).
