@@ -190,3 +190,21 @@ class Person {
     console.log(`Hello, my name is ${this.name}`);
   }
 }
+
+
+// 20.Explain Getters/Setters in TypeScript.
+class Circle2 {
+  private _radius: number = 0;
+
+  get radius(): number {
+    return this._radius;
+  }
+
+  set radius(newRadius: number) {
+    if (newRadius >= 0) {
+      this._radius = newRadius;
+    } else {
+      console.error("Radius cannot be negative.");
+    }
+  }
+}
