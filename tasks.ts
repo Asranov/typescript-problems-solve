@@ -163,3 +163,18 @@ class Circle {
     return Circle.PI * this.radius * this.radius;
   }
 }
+
+// 17.In TypeScript, what can you do to check null and undefined?
+let myVar: string | null | undefined = null;
+
+if (myVar == null) {
+  console.log("myVar is null or undefined");
+}
+
+if (myVar === null) {
+  console.log("myVar is null");
+}
+
+if (myVar === undefined) {
+  console.log("myVar is undefined");
+}
