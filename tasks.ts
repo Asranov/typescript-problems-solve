@@ -150,3 +150,16 @@ interface Person {
 // You want to use object-oriented concepts like inheritance, abstraction, and encapsulation.
 // You need to create instances of the class to interact with.
 // You want to use instance-specific state and methods based on concrete implementations.
+
+// 16.How can you use class constants in TypeScript?
+class Circle {
+  // Class constants
+  static readonly PI: number = 3.14159;
+
+  constructor(public radius: number) { }
+
+  // Method to calculate the area of the circle
+  calculateArea(): number {
+    return Circle.PI * this.radius * this.radius;
+  }
+}
