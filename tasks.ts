@@ -215,3 +215,10 @@ class Circle2 {
 
 // 22.Explain TypeScript Map file
 // A TypeScript Map file, also known as a Source Map, is a JSON file generated during the compilation process of TypeScript to JavaScript.
+
+// 23.Can you explain the difference between String and string in TypeScript?
+// In TypeScript, String and string both represent textual data, but they have different meanings and use cases:
+// string: This is the simplest, preferred, and most commonly used type for representing textual data in TypeScript.
+// let text: string = 'Hello, TypeScript!';
+// String: This is a built-in global object of JavaScript and wraps around the simple string type to provide additional methods and functionalities.
+// let wrappedText: String = new String('Wrapped TypeScript!');
