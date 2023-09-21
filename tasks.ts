@@ -208,3 +208,7 @@ class Circle2 {
     }
   }
 }
+
+// 21.Can TypeScript be used on the back-end and how
+// Yes, TypeScript can be used on the back-end for server-side development, just like JavaScript.
+// One popular approach for using TypeScript on the back-end is with Node.js. 
