@@ -253,3 +253,6 @@ enum Direction {
 // Now, you have TypeScript installed and ready to use. To compile a TypeScript file, you can use the tsc command followed by the filename, like this:
 // tsc myFile.ts
 // This command will compile your TypeScript file (myFile.ts) into a JavaScript file with the same name (myFile.js).
+
+// 30.Explain Variables in TypeScript and how to create them?
+// In TypeScript, variables are memory locations that store values of various data types. To declare and initialize a variable in TypeScript, you use the let or const keyword followed by the variable name, an optional type annotation, and the assignment operator (=) to provide an initial value.
