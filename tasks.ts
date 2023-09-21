@@ -181,3 +181,12 @@ if (myVar === undefined) {
 
 // 18.Are all object-oriented principles supported by TypeScript?
 // Yes, it supports the OOP principles 
+
+// 19.Also, tell me some OOP terms supported by TypeScript.
+class Person {
+  constructor(public name: string) { }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+}
