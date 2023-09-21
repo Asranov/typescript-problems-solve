@@ -178,3 +178,6 @@ if (myVar === null) {
 if (myVar === undefined) {
   console.log("myVar is undefined");
 }
+
+// 18.Are all object-oriented principles supported by TypeScript?
+// Yes, it supports the OOP principles 
