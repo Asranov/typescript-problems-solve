@@ -224,4 +224,12 @@ class Circle2 {
 // let wrappedText: String = new String('Wrapped TypeScript!');
 
 // 24.Explain Type Erasure in TypeScript?
-// Type erasure is a concept related to TypeScript's type system and how it behaves at runtime. 
+// Type erasure is a concept related to TypeScript's type system and how it behaves at runtime.
+
+// 25.How can you create an enum with string values?
+enum Direction {
+  North = 'NORTH',
+  South = 'SOUTH',
+  East = 'EAST',
+  West = 'WEST',
+}
