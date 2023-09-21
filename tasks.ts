@@ -211,4 +211,7 @@ class Circle2 {
 
 // 21.Can TypeScript be used on the back-end and how
 // Yes, TypeScript can be used on the back-end for server-side development, just like JavaScript.
-// One popular approach for using TypeScript on the back-end is with Node.js. 
+// One popular approach for using TypeScript on the back-end is with Node.js.
+
+// 22.Explain TypeScript Map file
+// A TypeScript Map file, also known as a Source Map, is a JSON file generated during the compilation process of TypeScript to JavaScript.
