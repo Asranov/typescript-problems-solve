@@ -222,3 +222,6 @@ class Circle2 {
 // let text: string = 'Hello, TypeScript!';
 // String: This is a built-in global object of JavaScript and wraps around the simple string type to provide additional methods and functionalities.
 // let wrappedText: String = new String('Wrapped TypeScript!');
+
+// 24.Explain Type Erasure in TypeScript?
+// Type erasure is a concept related to TypeScript's type system and how it behaves at runtime. 
