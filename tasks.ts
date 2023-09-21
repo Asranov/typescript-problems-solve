@@ -233,3 +233,6 @@ enum Direction {
   East = 'EAST',
   West = 'WEST',
 }
+
+// 26.List some features of TypeScript.
+// TypeScript brings several powerful features to JavaScript development, which help in creating safer, more maintainable, and scalable code. 
