@@ -263,3 +263,7 @@ enum Direction {
 // var [identifier]: [type-annotation] / Here we declare type without value
 // var [identifier] = value / Here we declare value without type
 // var [identifier] / Here we declare without value and type
+
+// 32.Can we compile .ts automatically with real-time changes in the .ts file?
+// Yes, you can automatically compile a TypeScript file (.ts) whenever there are real-time changes by using the TypeScript compiler's --watch option.
+// tsc --watch your-file.ts
