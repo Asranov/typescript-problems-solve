@@ -287,3 +287,6 @@ enum Direction {
 export function addFoo(a: number, b: number) {
   return a + b;
 }
+
+// 3.Differentiate between the internal module and the external module?
+// In TypeScript, "internal modules" and "external modules" are terms that were used in older versions of the language, and they have evolved into different concepts in more recent versions.
