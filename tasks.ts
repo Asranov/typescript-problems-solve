@@ -278,4 +278,12 @@ enum Direction {
 
 //                  INTERMEDIATE TYPESCRIPT INTERVIEW QUESTIONS AND ANSWERS
 //1.Why do we say that TypeScript is an optionally statically typed language?
-//TypeScript is referred to as an "optionally statically typed language" because it allows developers to mix both static and dynamic typing within the same codebase. 
+//TypeScript is referred to as an "optionally statically typed language" because it allows developers to mix both static and dynamic typing within the same codebase.
+
+//2.Explain modules in TypeScript ?
+// In TypeScript, modules are a way to organize and encapsulate related code, making it easier to reason about, maintain, and manage.
+// They allow developers to split code into separate files, with each module exporting and importing specific components, such as classes, functions, variables, or interfaces.
+//Math.ts
+export function addFoo(a: number, b: number) {
+  return a + b;
+}
