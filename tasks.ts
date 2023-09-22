@@ -290,3 +290,6 @@ export function addFoo(a: number, b: number) {
 
 // 3.Differentiate between the internal module and the external module?
 // In TypeScript, "internal modules" and "external modules" are terms that were used in older versions of the language, and they have evolved into different concepts in more recent versions.
+
+// 4.Explain namespace in TypeScript and its declaration
+// Also, known as internal modules, Namespace group functionalities in a logical manner
