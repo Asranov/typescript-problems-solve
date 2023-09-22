@@ -293,3 +293,14 @@ export function addFoo(a: number, b: number) {
 
 // 4.Explain namespace in TypeScript and its declaration
 // Also, known as internal modules, Namespace group functionalities in a logical manner
+
+// 5.Is function overloading supported in TypeScript
+// es, TypeScript supports function overloading, allowing you to define multiple function signatures for the same function with different parameter types and return types.
+
+function greetFoo(person: string, age?: number): string {
+  if (age === undefined) {
+    return `Hello, ${person}!`;
+  } else {
+    return `Hello, ${person}! You are ${age} years old.`;
+  }
+}
