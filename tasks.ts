@@ -277,3 +277,5 @@ enum Direction {
 
 
 //                  INTERMEDIATE TYPESCRIPT INTERVIEW QUESTIONS AND ANSWERS
+//1.Why do we say that TypeScript is an optionally statically typed language?
+//TypeScript is referred to as an "optionally statically typed language" because it allows developers to mix both static and dynamic typing within the same codebase. 
