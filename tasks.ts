@@ -267,3 +267,8 @@ enum Direction {
 // 32.Can we compile .ts automatically with real-time changes in the .ts file?
 // Yes, you can automatically compile a TypeScript file (.ts) whenever there are real-time changes by using the TypeScript compiler's --watch option.
 // tsc --watch your-file.ts
+
+// 33.List the access modifiers that TypeScript supports.
+// Public/  public myProperty: string;
+// Private/ private myProperty: string;
+// Protected/ protected protectedProperty: string;
