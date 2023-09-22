@@ -256,3 +256,10 @@ enum Direction {
 
 // 30.Explain Variables in TypeScript and how to create them?
 // In TypeScript, variables are memory locations that store values of various data types. To declare and initialize a variable in TypeScript, you use the let or const keyword followed by the variable name, an optional type annotation, and the assignment operator (=) to provide an initial value.
+
+// 31.List the ways you can declare a variable?
+// 4 ways examples below:
+// var [identifier]: [type-annotation] = value / Here we declare type and value in a single statement
+// var [identifier]: [type-annotation] / Here we declare type without value
+// var [identifier] = value / Here we declare value without type
+// var [identifier] / Here we declare without value and type
