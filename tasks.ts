@@ -304,3 +304,6 @@ function greetFoo(person: string, age?: number): string {
     return `Hello, ${person}! You are ${age} years old.`;
   }
 }
+
+// 6.Explain Mixins?
+// Mixins are a way of creating classes from components that can be reused. Basically, they are built up by combining simpler partial classes. 
