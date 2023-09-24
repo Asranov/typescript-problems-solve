@@ -306,4 +306,7 @@ function greetFoo(person: string, age?: number): string {
 }
 
 // 6.Explain Mixins?
-// Mixins are a way of creating classes from components that can be reused. Basically, they are built up by combining simpler partial classes. 
+// Mixins are a way of creating classes from components that can be reused. Basically, they are built up by combining simpler partial classes.
+
+// 7.TypeScript supports optional parameters in function, can you explain how?
+// In the TypeScript compiler, an error is thrown if the function is invoked without giving the exact number and types of parameters as are given in the function signature. 
