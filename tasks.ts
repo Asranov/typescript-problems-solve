@@ -345,5 +345,14 @@ if (true) {
 //# sourceMappingURL=file1.js.map
 
 // 10.Explain TypeScript Definition Manager and its use.
-// In the TypeScript ecosystem, the TypeScript Definition Manager (TSD) was a popular command-line tool used to manage TypeScript declaration files (.d.ts) which contain type definitions for external JavaScript libraries and frameworks. 
+// In the TypeScript ecosystem, the TypeScript Definition Manager (TSD) was a popular command-line tool used to manage TypeScript declaration files (.d.ts) which contain type definitions for external JavaScript libraries and frameworks.
+
+// 11.Tell me the steps to include a Type Definition File.
+// First, install TSD
+// $ npm install tsd -g
+// Go to TypeScript directory and launch new TypeScript project
+// $ tsd init
+// Now install the definition file for jquery
+// tsd query jquery --action install
+// Now, update the TypeScript file to include the definition file to point to the jQuery definition.
 
