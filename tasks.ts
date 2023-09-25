@@ -360,4 +360,7 @@ if (true) {
 // The declare keyword in TypeScript is used to inform the TypeScript compiler about the existence of a variable, function, class, or module that is defined externally, usually in some external JavaScript code or a library.
 
 // 13.Explain tsconfig.json file?
-// The tsconfig.json file is a configuration file used in TypeScript projects to specify various compiler options and settings. 
+// The tsconfig.json file is a configuration file used in TypeScript projects to specify various compiler options and settings.
+
+// 14.Tell me about Generics in TypeScript?
+// Generics is a tool that provides a way of creating reusable components. It provides components that can work with varied data types instead of a single data type.
