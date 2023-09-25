@@ -364,3 +364,6 @@ if (true) {
 
 // 14.Tell me about Generics in TypeScript?
 // Generics is a tool that provides a way of creating reusable components. It provides components that can work with varied data types instead of a single data type.
+
+// 15.Differentiate between interface and type statements?
+// In TypeScript, both interface and type statements can be used to define custom types, and sometimes their use can overlap.
