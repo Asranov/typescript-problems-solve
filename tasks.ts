@@ -344,3 +344,6 @@ if (true) {
 // After this we get file11.js and file11.js.map. And the last line of file11.js would be a reference of the source map file.
 //# sourceMappingURL=file1.js.map
 
+// 10.Explain TypeScript Definition Manager and its use.
+// In the TypeScript ecosystem, the TypeScript Definition Manager (TSD) was a popular command-line tool used to manage TypeScript declaration files (.d.ts) which contain type definitions for external JavaScript libraries and frameworks. 
+
