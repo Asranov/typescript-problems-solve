@@ -336,6 +336,11 @@ if (true) {
   let blockScope = 30
   console.log(blockScope); //Accessible
 }
-
 // console.log(blockScope); //Error - blockVar is not defined here
+
+// 9.Explain to me the debugging process for a TypeScript file.
+// First of all, for the debugging process, you will need .js source map file. Then you compile the .ts file with the – sourcemap flag to generate a source map file.
+// $ tsc -sourcemap file 11.ts
+// After this we get file11.js and file11.js.map. And the last line of file11.js would be a reference of the source map file.
+//# sourceMappingURL=file1.js.map
 
