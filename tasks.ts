@@ -310,3 +310,6 @@ function greetFoo(person: string, age?: number): string {
 
 // 7.TypeScript supports optional parameters in function, can you explain how?
 // In the TypeScript compiler, an error is thrown if the function is invoked without giving the exact number and types of parameters as are given in the function signature. 
+const greetFunction = (name: string, age?: number) => {
+  return age ? `${name} is ${age} years old` : `${name}`;
+}
