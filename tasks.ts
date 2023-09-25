@@ -357,4 +357,7 @@ if (true) {
 // Now, update the TypeScript file to include the definition file to point to the jQuery definition.
 
 // 12.Explain TypeScript Declare Keyword?
-// The declare keyword in TypeScript is used to inform the TypeScript compiler about the existence of a variable, function, class, or module that is defined externally, usually in some external JavaScript code or a library. 
+// The declare keyword in TypeScript is used to inform the TypeScript compiler about the existence of a variable, function, class, or module that is defined externally, usually in some external JavaScript code or a library.
+
+// 13.Explain tsconfig.json file?
+// The tsconfig.json file is a configuration file used in TypeScript projects to specify various compiler options and settings. 
