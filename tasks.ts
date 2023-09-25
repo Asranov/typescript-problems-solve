@@ -313,3 +313,29 @@ function greetFoo(person: string, age?: number): string {
 const greetFunction = (name: string, age?: number) => {
   return age ? `${name} is ${age} years old` : `${name}`;
 }
+
+// 8.Explain the Scope variable?
+// In TypeScript, the scope of a variable refers to the context or region of code in which the variable is accessible and can be used.
+// Global Scope
+// Function Scope
+// Block Scope
+
+const globalScope = 10
+
+function someFunction() {
+  console.log(globalScope); // Accessible
+}
+
+function someFunc() {
+  const localScope = 15
+  console.log(localScope); // Accessible
+}
+// console.log(localScope); // Error - localVar is not defined here
+
+if (true) {
+  let blockScope = 30
+  console.log(blockScope); //Accessible
+}
+
+// console.log(blockScope); //Error - blockVar is not defined here
+
