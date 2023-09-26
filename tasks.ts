@@ -369,4 +369,16 @@ if (true) {
 // In TypeScript, both interface and type statements can be used to define custom types, and sometimes their use can overlap.
 
 // 16.Tell me about JSX in TypeScript.
-// JSX (JavaScript XML) is a syntax extension for JavaScript, primarily used with React, that allows you to write HTML-like code within your JavaScript or TypeScript code. 
+// JSX (JavaScript XML) is a syntax extension for JavaScript, primarily used with React, that allows you to write HTML-like code within your JavaScript or TypeScript code.
+
+// 17.List some JSX modes in TypeScript?
+// In TypeScript, JSX is a syntax extension for JavaScript that resembles XML, commonly used in UI frameworks like React.
+// preserve
+// react
+// react-jsx
+// react-jsxdev
+// react-native
+
+
+
+
