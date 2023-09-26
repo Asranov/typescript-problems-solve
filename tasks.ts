@@ -367,3 +367,6 @@ if (true) {
 
 // 15.Differentiate between interface and type statements?
 // In TypeScript, both interface and type statements can be used to define custom types, and sometimes their use can overlap.
+
+// 16.Tell me about JSX in TypeScript.
+// JSX (JavaScript XML) is a syntax extension for JavaScript, primarily used with React, that allows you to write HTML-like code within your JavaScript or TypeScript code. 
