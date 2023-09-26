@@ -380,5 +380,8 @@ if (true) {
 // react-native
 
 
+// 18.Explain Ambients in TypeScripts and their use?
+// These declarations inform the compiler about the actual source code that exists elsewhere. If these codes do not exist at runtime and one tries to use them, it will break and not give a warning either.
+
 
 
